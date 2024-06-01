@@ -1,0 +1,40 @@
+@use '../abstracts' as a;
+@use '../base/' as b;
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1110px;
+   width: 90%;
+   margin: auto;
+   padding: 3.5rem 0 3.5rem;
+   position: relative;
+   &__links {
+      display: flex;
+      gap: 2.55rem;
+      @include b.sm {
+         display: none;
+      }
+   }
+   @include b.sm{
+    padding: 1.5rem 0;
+   }
+}
+
+.logo {
+   @include b.sm {
+      transform: scale(0.7) translate(-12px);
+   }
+}
+
+.icon-menu {
+   display: none;
+   position: absolute;
+   right: 0;
+   z-index: 999;
+   cursor: pointer;
+   @include b.sm {
+      display: block;
+   }
+}

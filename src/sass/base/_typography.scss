@@ -1,0 +1,76 @@
+@use '../abstracts' as a;
+
+* {
+   font-family: 'Inter', sans-serif;
+}
+
+a,
+p {
+   font-size: a.$fs-p;
+   font-weight: a.$fw-400;
+}
+
+p {
+   line-height: 175%;
+}
+
+h1{
+   font-size: a.$fs-title-lg;
+   font-weight: a.$fw-800;
+   line-height: 100%;
+
+}
+
+h2 {
+   font-size: a.$fs-title-md;
+   font-weight: a.$fw-700;
+}
+
+h3 {
+   font-size: a.$fs-title-sm;
+   font-weight: a.$fw-800;
+   line-height: 200%;
+}
+
+h4{
+   font-size: a.$fs-title-sm2;
+   font-weight: a.$fw-800;
+}
+
+span{
+   font-size: a.$fs-span;
+   font-weight: a.$fw-800;
+}
+
+.top-three__number{
+   color: a.$soft-red;
+}
+
+.top-three__title{
+   color: a.$very-dark-blue;
+   &:hover{
+      color: a.$soft-red;
+      cursor: pointer;
+   }
+}
+
+.top-three__text{
+   color: a.$dark-grayish-blue;
+}
+
+.header__links__item a {
+   color: a.$dark-grayish-blue;
+   &:hover {
+      color: a.$soft-red;
+   }
+}
+
+.mobile-menu__links__item a{
+   font-size: a.$fs-title-sm2;
+   color: a.$very-dark-blue;
+}
+
+.new__article__title:hover {
+   color: a.$soft-orange;
+   cursor: pointer;
+}

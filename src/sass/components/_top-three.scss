@@ -1,0 +1,55 @@
+@use '../base' as b;
+
+.top-three {
+   grid-column: 1/3;
+   display: grid;
+   grid-template-columns: repeat(3, auto);
+   justify-content: space-between;
+   // position: relative;
+   &__article {
+      display: flex;
+      gap: 1.4rem;
+      align-items: center;
+      max-width: 350px;
+      justify-self: center;
+      height: 128px;
+      &__img {
+         height: 128px;
+         img {
+            height: 100%;
+         }
+      }
+   }
+   .group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    // background-color: blue;
+ }
+   @include b.lg {
+    grid-template-columns: repeat(3, 345px);
+    overflow-x: scroll;
+    overflow-y: hidden;
+   }
+   @include b.sm{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   }
+}
+
+// .shadow{
+//     display: none;
+//     width: 50px;
+//     height: 128px;
+//     background: linear-gradient(90deg, rgba(2,0,36,0) 10%, rgba(0, 0, 0, 0.062) 100%);
+//     position: absolute;
+//     right: 0;
+//     @include b.lg{
+//         display: block;
+//     }
+//     @include b.sm{
+//         display: none;
+//     }
+// }

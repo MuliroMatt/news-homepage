@@ -1,0 +1,17 @@
+@use '../abstracts' as a;
+
+.btn{
+    background-color: a.$soft-red;
+    text-transform: uppercase;
+    font-weight: a.$fw-800;
+    color: a.$very-dark-blue;
+    font-size: 15px;
+    letter-spacing: 4px;
+    padding: 1rem 2rem;
+    &:hover{
+        // background-color: a.$very-dark-blue;
+        transition: .3s;
+        color: a.$off-white;
+        box-shadow: inset 200px 0 0 0 a.$very-dark-blue;
+    }
+}

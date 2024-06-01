@@ -1,0 +1,32 @@
+@use '../abstracts' as a;
+@use '../base' as b;
+
+.new {
+   background-color: a.$very-dark-blue;
+   padding: 1.75rem 1.5rem;
+   &__title {
+      color: a.$soft-orange;
+      @include b.sm{
+         font-size: 2rem;
+      }
+   }
+   hr{
+       border: none;
+       height: 1px;
+       background-color: a.$grayish-blue;
+   }
+   &__article {
+    margin: 22px 0 28px;
+    &:nth-child(6){
+        margin: 22px 0 0;
+    }
+      &__title {
+         color: a.$off-white;
+      }
+      &__text {
+         color: a.$grayish-blue;
+      }
+   }
+}
+
+

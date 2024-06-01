@@ -1,0 +1,17 @@
+@use '../base' as b;
+
+.main-content{
+    max-width: 1110px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 5rem;
+    margin-bottom: 6rem;
+    grid-template-columns: 1fr 350px;
+    @include b.lg{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
