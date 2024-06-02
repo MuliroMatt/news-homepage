@@ -7,7 +7,7 @@ import TopThree from './components/TopThree';
 import MobileMenu from './components/MobileMenu';
 
 const App = () => {
-   const [isOpen, setIsOpen] = useState(true);
+   const [isOpen, setIsOpen] = useState(false);
 
    const open = () => {
       setIsOpen((open) => !open);
