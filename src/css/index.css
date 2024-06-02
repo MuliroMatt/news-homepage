@@ -96,7 +96,6 @@ span {
   width: 90%;
   margin: auto;
   padding: 3.5rem 0 3.5rem;
-  position: relative;
 }
 .header__links {
   display: flex;
@@ -121,9 +120,6 @@ span {
 
 .icon-menu {
   display: none;
-  position: absolute;
-  right: 0;
-  z-index: 999;
   cursor: pointer;
 }
 @media (max-width: 620px) {
@@ -273,9 +269,9 @@ span {
   background-color: hsl(36, 100%, 99%);
   width: 255px;
   height: 100%;
-  float: right;
   padding: 1.5rem 1.5rem 0 1.2rem;
-  transform: translate(255px);
+  position: fixed;
+  right: 0;
 }
 .mobile-menu__links {
   display: flex;
@@ -283,9 +279,11 @@ span {
   flex-direction: column;
   gap: 1.75rem;
 }
-.mobile-menu--open {
-  transition: 0.5s;
-  transform: translate(0px);
+
+.icon-menu-close {
+  float: right;
+  margin: 0.25rem 0.5rem 0 0;
+  cursor: pointer;
 }
 
 .backdrop {
@@ -293,10 +291,6 @@ span {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.445);
   position: fixed;
-  display: none;
-}
-.backdrop--open {
-  display: block;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Backdrop = ({children, open}) => {
+const Backdrop = ({children, onClick}) => {
   return (
-    <div className={`backdrop ${open}`}>
+    <div 
+    onClick={onClick}
+    className='backdrop'>
         {children}
     </div>
   )

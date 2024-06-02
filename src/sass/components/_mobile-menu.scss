@@ -3,20 +3,22 @@
 
 .mobile-menu{
     background-color: a.$off-white;
+    // background-color: red;
     width: 255px;
     height: 100%;
-    float: right;
     padding: 1.5rem 1.5rem 0 1.2rem;
-    transform: translate(255px);
+    position: fixed;
+    right: 0;
     &__links{
         display: flex;
         margin-top: 120px;
         flex-direction: column;
         gap: 1.75rem;
     }
-    &--open{
-        transition: .5s;
-        transform: translate(0px);
-        // width: 255px;
-    }
+}
+
+.icon-menu-close{
+    float: right;
+    margin: .25rem .5rem 0 0;
+    cursor: pointer;
 }

@@ -9,7 +9,6 @@
    width: 90%;
    margin: auto;
    padding: 3.5rem 0 3.5rem;
-   position: relative;
    &__links {
       display: flex;
       gap: 2.55rem;
@@ -30,9 +29,6 @@
 
 .icon-menu {
    display: none;
-   position: absolute;
-   right: 0;
-   z-index: 999;
    cursor: pointer;
    @include b.sm {
       display: block;
